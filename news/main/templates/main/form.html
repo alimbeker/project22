@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        {% load static %}
+        <link type="text/css" href="{% static 'main/css/formstyle.css' %}"  rel = "stylesheet"  />
+
+</head>
+<body>
+    
+{%for i in post%}
+<div id = "Read">
+<p>{{ i.full_text }}</p>
+<a href="{% url  'news-detail'  i.id %}" >  <button class="btn btn-success">More details</button></a>
+</div>
+{%endfor%}
+<div id = "add">
+    <br>
+    <br>
+    <br>
+    <a href="{% url  'add-post' %}" >  <button class="btn btn-success">Add data</button>  </a>
+</div>
+</body>
+</html>

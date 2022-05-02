@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sport</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        {% load static %}
+        <link type="text/css" href="{% static 'main/css/styles.css' %}"  rel = "stylesheet"  />
+        </head>
+
+        <body>
+        <br></br>
+        <p class="zag" style="margin-left:555px;">About Sportmens</p>
+        
+        {% for x in video %}
+        <div class="people">
+            
+             <div class="text_direction">
+            <h1>{{x.mcountry}}</h1>
+            <div style="width:80px;height:22px;border:0.5px solid rgb(90, 70, 70);font-family:cursive;background-color:white;">Kazakhstan</div>
+            <br>
+            <h3>{{x.msportsmen}}</h3>
+            <text>{{x.mtext}}</text>
+            
+            <div style="margin-right:-50px"> 
+              <br>
+              <p>{{x.mcaption}}</p>
+              <video width="320" height="240" controls>
+                  <source src="{{x.mvideo.url}}" type="video/mp4">
+                </video>
+             </div>
+            <a href="https://weproject.media/en/articles/detail/why-foreigners-believe-that-kazakhstan-is-a-safe-country-to-travel-work-and-live/"><button type="button" class="btn btn-outline-primary">Read more</button></a>
+            
+            </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="height:0.2px;border-width:0;color:rgb(228, 220, 220);background-color:rgb(228, 222, 222)">
+     
+   
+    {% endfor %}
+    <br></br> 
+    <a href="http://127.0.0.1:8000/index/"><button class="btn btn-success btn-lg" style="margin-left:35px">ADD ARTICLE</button></a>
+</body>
+</html>

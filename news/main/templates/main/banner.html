@@ -1,0 +1,50 @@
+<div class="content">
+    
+    <div class="test">
+
+            
+
+            
+
+            <div class = "banner">
+            <div><a href = "http://127.0.0.1:8000"><img src="https://st4.depositphotos.com/38197074/41925/v/600/depositphotos_419252276-stock-illustration-initial-letter-vector-logo-icon.jpg" alt="" width="115%" 
+     height="85%"></a></div>
+           
+                 <div><a href="http://127.0.0.1:8000/women/"><text style="font-size: small">WOMEN</text></a></div>
+
+
+
+
+                <div><a href="http://127.0.0.1:8000/men/"><text style="font-size: small">MEN</text></a></div>
+           
+              
+            
+            <div><a href="http://127.0.0.1:8000/forupload/"><text style="font-size: small">ARTICLES</text></a>
+           
+                </div>
+                <div><a href="http://127.0.0.1:8000/sportnews"><text style="font-size: small">NEWS</text></a></div>
+<div><a href="http://127.0.0.1:8000/login"><text style="font-size: small">SIGN IN  |  LOG IN</text></a></div>
+      
+<div><a href="http://127.0.0.1:8000/test"><text style="font-size: small">CONTACTS</text></a></div>
+      
+         
+
+        <div style="margin-left:460px"><span class="hello-msg">Hello, {{request.user}}</span>
+            <span><a class="hello-msg" href="{% url 'logout' %}">LOGOUT</a></span>
+        </div>
+
+        
+    </div>
+            
+    </div>
+</div>
+
+<style>
+.hello-msg {
+font-size: small;
+color: black;
+
+margin-right: 20px;
+}
+
+</style>

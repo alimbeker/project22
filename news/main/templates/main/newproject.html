@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+       
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+       
+        <!-- Core theme CSS (includes Bootstrap)-->
+        
+ {% load static %}
+        <link type="text/css" href="{% static 'main/css/projectdesign.css' %}"  rel = "stylesheet"  />
+</head>
+<body>
+	
+  {% include 'main/banner.html'%}
+
+
+
+<nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: rgb(135,206,250);"
+    >
+      <a class="navbar-brand" href="#"><text style="font-size: small" >KAZAKHSTAN'S FAMOUS SPORTSMENS</text></a>
+  
+      
+    </nav>
+ 
+<div class="row">
+  <div class="column">
+    <img src="https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTY4MDA3MDQxMDI4NTk3MTIw/golovkin-dazn-dealjpg.jpg" alt="Forest" style="width:103%">
+  </div>
+  <div class="column">
+    <img src="https://novoetv.kz/wp-content/uploads/2018/09/15be215272a61735130cc43fa4638409.jpg" alt="Snow" style="width:103%">
+  </div>
+  
+  <div class="column">
+    <img src="https://en.tengrinews.kz/userdata/news_en/2012/news_8488/thumb_m/photo_14558.jpg" alt="Mountains" style="width:104.2%">
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://www.inform.kz/fotoarticles/20190111124430.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2022-02/020522-shavkat-on-the-rise-hero_GettyImages-1325624138.jpg?h=d1cb525d&itok=yemM7rO5" alt="Snow" style="width:118.3%">
+  </div>
+  
+  <div class="column">
+   <img src="https://weproject.media/upload/medialibrary/02d/02d51c92ba0b42a77fe092baa05ca6bd.jpeg" alt="Forest" style="width:109%">
+  </div>
+</div>
+
+<nav class = "fill">
+<div id = 'winners'>
+  <a href = ""><img src="data:image/png;base64,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" alt= "dd" width="3.2%" height="3.2%"><text style="font-size: small">
+ WINNERS</text></a>
+
+</nav>
+</div>
+<table class="table table-striped table-hover">
+{% for k in var%}
+        
+    <tr>
+        <th>{{k.fullnames}}</th>
+        <th>{{k.medaltype}}</th>
+        
+        
+    </tr>
+    {%endfor%}
+	</table>
+
+
+
+ 
+</body>
+</html>
